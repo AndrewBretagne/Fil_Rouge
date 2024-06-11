@@ -5,17 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snack du Monde</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
      <!-- Navbar -->
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-         <button class="navbar-toggler" type="button" onclick="openNav()">
+     <nav class="navbar navbar-expand-lg custom-navbar position-relative" style="background-color: #E5DD90;">
+         <button class="navbar-toggler overlay-toggle" type="button" onclick="openNav()">
              <span class="navbar-toggler-icon"></span>
              </button>
-            <a class="navbar-brand" href="#">Brand</a>
+            <a class="navbar-brand navbar-center" href="/">
+                <img src="images/SNACK DU MONDE logo2.png" alt="Brand Logo">
+            </a>
+            <div class="d-flex align-items-center">
+            <a href="#" class="cart-icon position-absolute" style="right: 10px; top: 50% translateY(-50%);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="#636363" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                  </svg>
+            </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
     </nav>
+    <!-- Full-Screen Background Image Section -->
+    <div class="full-screen-bg">
+        <div class="content">
 
+        </div>
+    </div>
+
+    <!-- Blank Section Below the Background Image -->
+    <div style="height: 1000px;">
+        <!-- Empty space or additional content can go here -->
+    </div>
     <!-- Overlay Menu -->
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -32,7 +68,7 @@
 
     <script>
         function openNav() {
-            document.getElementById("myNav").style.width = "90%";
+            document.getElementById("myNav").style.width = "80%";
         }
 
         function closeNav() {

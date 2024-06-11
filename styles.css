@@ -1,4 +1,9 @@
- /* Custom CSS for overlay */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.body{
+    font-family: "inter", sans-serif;
+}
+/* Custom CSS for overlay */
  .overlay {
     height: 100%;
     width: 0;
@@ -13,14 +18,17 @@
 .overlay-content {
     position: relative;
     top: 25%;
-    width: 90%;
+    width: 80%;
     text-align: left;
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 .overlay a {
-    padding: 8px;
+    padding: 10px;
     text-decoration: none;
     font-size: 36px;
+    font-weight: bold;
+    font-family: inter;
     color: #45b046;
     display: block;
     transition: 0.3s;
@@ -33,4 +41,71 @@
     top: 20px;
     right: 45px;
     font-size: 60px;
+}
+.custom-navbar {
+    padding: 20px 10px; /* Adjust padding to make the navbar thicker */
+    background-color: #e5dd90; 
+}
+.navbar-brand img {
+    height: 60px; /* Adjust logo height as needed */
+}
+.navbar-toggler {
+    border-color: transparent;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2899, 99, 99, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.full-screen-bg{
+    height: 100vh;
+    background: url(images/british\ background.png) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: #000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content {
+    position: relative;
+    z-index: 1;
+}
+ /* Hide regular nav links on small screens */
+ @media (max-width: 991px) {
+    .navbar-nav {
+        display: none;
+    }
+    .cart-icon {
+        display: block;
+    }
+    .nav-link-cart {
+        display: none;
+    }
+}
+/* Show overlay toggler and cart icon on small screens */
+@media (max-width: 991px) {
+    .overlay-toggle {
+        display: block;
+    }
+    .cart-icon {
+        display: block;
+    }
+}
+/* Hide overlay toggler and cart icon on large screens */
+@media (min-width: 992px) {
+    .overlay-toggle {
+        display: none;
+    }
+    .cart-icon {
+        display: none;
+    }
+    .nav-link-cart {
+        display: block;
+    }
 }
