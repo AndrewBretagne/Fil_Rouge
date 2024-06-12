@@ -38,16 +38,25 @@
 }
 .overlay .closebtn {
     position: absolute;
-    top: 20px;
+    top: 50px;
     right: 45px;
     font-size: 60px;
 }
 .custom-navbar {
-    padding: 20px 10px; /* Adjust padding to make the navbar thicker */
+    padding: 20px 10px;
     background-color: #e5dd90; 
+    border-bottom: 3px solid #45b046;
+}
+.custom-nav-link {
+    color: #45b046;
+    font-weight: bold; 
+    font-size: 1.2em;
+}
+.custom-nav-link:hover {
+    color:darkgreen; 
 }
 .navbar-brand img {
-    height: 60px; /* Adjust logo height as needed */
+    height: 60px; 
 }
 .navbar-toggler {
     border-color: transparent;
@@ -63,7 +72,7 @@
 
 .full-screen-bg{
     height: 100vh;
-    background: url(images/british\ background.png) no-repeat center center;
+    background: url(../images/british_background.png) no-repeat center center;
     background-size: cover;
     position: relative;
     color: #000;
@@ -75,6 +84,16 @@
 .content {
     position: relative;
     z-index: 1;
+}
+@media (max-width: 576px) {
+    .navbar-brand img {
+        height: 35px; /* Smaller logo height for extra small screens */
+    }
+}
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 40px; /* Slightly larger logo height for small screens */
+    }
 }
  /* Hide regular nav links on small screens */
  @media (max-width: 991px) {
