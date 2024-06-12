@@ -6,7 +6,7 @@
     <title>Snack du Monde</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
      <!-- Navbar -->
@@ -15,10 +15,10 @@
              <span class="navbar-toggler-icon"></span>
              </button>
             <a class="navbar-brand navbar-center" href="/">
-                <img src="images/SNACK_DU_MONDE_logo2.png" alt="Brand Logo">
+                <img src="../images/SNACK_DU_MONDE_logo2.png" alt="Brand Logo">
             </a>
             <div class="d-flex align-items-center">
-            <a href="#" class="cart-icon position-absolute" style="right: 10px; top: 50% translateY(-50%);">
+            <a href="panier.html" class="cart-icon position-absolute" style="right: 10px; top: 50% translateY(-50%);">
                 <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="#636363" class="bi bi-cart" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                   </svg>
@@ -27,16 +27,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link custom-nav-link" href="#">Home</a>
+                        <a class="nav-link custom-nav-link" href="abonnement.html">Abonnement</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link custom-nav-link" href="#">About</a>
+                        <a class="nav-link custom-nav-link" href="les_boites.html">Les boîtes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link custom-nav-link" href="#">Services</a>
+                        <a class="nav-link custom-nav-link" href="a_propos.html">À propos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link custom-nav-link" href="#">Contact</a>
+                        <a class="nav-link custom-nav-link" href="panier.html">Panier</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="se_connecter.html">Se connecter</a>
                     </li>
                 </ul>
             </div>
@@ -44,6 +47,18 @@
     <!-- Full-Screen Background Image Section -->
     <div class="full-screen-bg">
         <div class="content">
+            <div id="text-box" style="background-color: rgba(255, 242, 240, 0.9);">
+            <h1>Savourez le monde!</h1>
+            <h2>Chaque mois vous pouvez découvrir un pays différent</h2>
+            <h2>Ce mois-ci est...</h2>
+            <div>
+                <img src="../images/so_british.png" class="img-fluid" alt="the words so british decorated in the british flag">
+            </div>
+            <div id="gift-basket">
+                <img src="../images/gift_basket.png" class="img-fluid" alt="a british themed gift basket">
+            </div>
+            </div>
+
 
         </div>
     </div>
@@ -56,10 +71,14 @@
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+            <a href="index.html">Accueil</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+            <a href="abonnement.html">Abonnement</a>
+            <a href="les_boites.html">Les boîtes</a>
+            <a href="a_propos.html">À propos</a>
+            <a href="panier.html">Panier</a>
+            <a href="se_connecter.html">Se connecter</a>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

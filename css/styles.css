@@ -2,6 +2,7 @@
 
 .body{
     font-family: "inter", sans-serif;
+    justify-content: center;
 }
 /* Custom CSS for overlay */
  .overlay {
@@ -11,7 +12,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgba(229, 221, 144, 0.9);
+    background-color: rgba(229, 221, 144, 1);
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -26,7 +27,7 @@
 .overlay a {
     padding: 10px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 1.5em;
     font-weight: bold;
     font-family: inter;
     color: #45b046;
@@ -34,13 +35,13 @@
     transition: 0.3s;
 }
 .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: darkgreen;
 }
 .overlay .closebtn {
     position: absolute;
-    top: 50px;
+    top: 90px;
     right: 45px;
-    font-size: 60px;
+    font-size:3em;
 }
 .custom-navbar {
     padding: 20px 10px;
@@ -82,9 +83,31 @@
     justify-content: center;
 }
 .content {
+    height: 100vh;
     position: relative;
     z-index: 1;
+
 }
+
+#text-box h1 {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    max-width: 90%;
+}
+
+#text-box h2 {
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    max-width: 90%;
+}
+
+#gift-basket img{
+    width: 350px;
+}
+
 @media (max-width: 576px) {
     .navbar-brand img {
         height: 35px; /* Smaller logo height for extra small screens */
