@@ -2,7 +2,7 @@
 
 .body{
     font-family: "inter", sans-serif;
-    justify-content: center;
+    
 }
 /* Custom CSS for overlay */
  .overlay {
@@ -63,7 +63,7 @@
     border-color: transparent;
 }
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2899, 99, 99, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2869, 176, 70, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 .navbar-center {
     position: absolute;
@@ -89,8 +89,12 @@
 
 }
 
+#text-box{
+    border-radius: 10px;
+}
+
 #text-box h1 {
-    margin-top: 80px;
+    padding-top: 20px;
     margin-left: auto;
     margin-right: auto;
     font-weight: bold;
@@ -104,8 +108,27 @@
     max-width: 90%;
 }
 
-#gift-basket img{
-    width: 350px;
+ /* Default size for gift-basket image */
+ #gift-basket img {
+    border:#000 5px solid;
+    width: 80%;
+    max-width: 300px;
+}
+
+/* Larger size for desktop */
+@media (min-width: 768px) {
+    #gift-basket img {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+/* Smaller size for mobile */
+@media (max-width: 576px) {
+    #gift-basket img {
+        width: 70%;
+        max-width: 200px;
+    }
 }
 
 @media (max-width: 576px) {

@@ -14,12 +14,12 @@
          <button class="navbar-toggler overlay-toggle" type="button" onclick="openNav()">
              <span class="navbar-toggler-icon"></span>
              </button>
-            <a class="navbar-brand navbar-center" href="/">
+            <a class="navbar-brand navbar-center" href="index.html">
                 <img src="../images/SNACK_DU_MONDE_logo2.png" alt="Brand Logo">
             </a>
             <div class="d-flex align-items-center">
-            <a href="panier.html" class="cart-icon position-absolute" style="right: 10px; top: 50% translateY(-50%);">
-                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="#636363" class="bi bi-cart" viewBox="0 0 16 16">
+            <a href="panier.html" class="cart-icon position-relative" style="right: 10px; top: 50% translateY(-50%);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="#45b046" class="bi bi-cart" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                   </svg>
             </a>
@@ -46,7 +46,7 @@
     </nav>
     <!-- Full-Screen Background Image Section -->
     <div class="full-screen-bg">
-        <div class="content">
+        <div class="content text-center">
             <div id="text-box" style="background-color: rgba(255, 242, 240, 1);">
                 <h1>Savourez le monde!</h1>
                 <h2>Chaque mois vous pouvez découvrir un pays différent</h2>
@@ -56,19 +56,140 @@
                 </div>
             </div>
             <br>
-            <div id="gift-basket">
+            <div id="gift-basket" class="text-center">
                 <img src="../images/gift_basket.png" class="img-fluid rounded-circle p-3 bg-white" alt="a british themed gift basket">
             </div>
             
-
-
         </div>
     </div>
+<!-- Articles Section -->
+<div class="container-fluid py-5" style="background-color: #f2f9e7;">
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h4 class="card-title">Comment ça marche ?</h4>
+                    <br>
+                    <p class="card-text">Choissisez votre forfait et commencez votre tour du monde !</p>
+                    <p>Choisissez le forfait qui vous convient : plus l'abonnement est long, moins la box est chère !</p>
+                    <br>
+                    <p>Livraison dans le monde entier : Votre box vous sera envoyée régulièrement chaque mois, où que vous soyez !</p>
+                    <br>
+                    <p>Dégustez, c'est tout !</p>
+                    <a href="abonnement.html" class="btn btn-success">Abonnez-vous</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Dans chaque boîte vous trouverez...</h5>
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><img src="#"></th>
+                                <td colspan="3" style="text-align: left;">Des paquets de délicieux biscuits - salés ou sucrés</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><img src="#"></th>
+                                <td colspan="3" style="text-align: left;">Une sélection de beaux gâteaux et pâtisseries</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><img src="#"></th>
+                                <td colspan="3" style="text-align: left;">Beaucoup de friandises traditionnelles</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><img src="#"></th>
+                                <td colspan="3" style="text-align: left;">Une sélection de thés, cafés ou autres boissons chaudes typiques du pays du mois</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><img src="#"></th>
+                                <td colspan="3" style="text-align: left;">Les meilleurs sodas et boissons fraîches</td>
+                            </tr>
+                        </tbody>
 
-    <!-- Blank Section Below the Background Image -->
-    <div style="height: 1000px;">
-        <!-- Empty space or additional content can go here -->
+                    </table>
+                    <a href="les_boites.html" class="btn btn-success">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Vous trouverez également...</h5>
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><img src="#"></th>
+                                <td colspan="3" style="text-align: left;">Un guide contenant toutes les informations dont vous avez besoin concernant la nutrition et les allergènes.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><img src="#"></th>
+                                <td colspan="3" style="text-align: left;">Un guide culturel spécifique au pays du mois</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><img src="#"></th>
+                                <td colspan="3" style="text-align: left;">Des informations complètes sur nos modes et tarifs de livraison</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="#" class="btn btn-success">En savoir plus</a>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="bg-dark text-white pt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li>Email: contact@snackdumonde.com</li>
+                    <li>Phone: +33 1 23 45 67 89</li>
+                    <li>Address: 123 Rue de la Snack, Paris, France</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <a href="#" class="text-white"><i class="bi bi-facebook"></i> Facebook</a><br>
+                <a href="#" class="text-white"><i class="bi bi-twitter"></i> Twitter</a><br>
+                <a href="#" class="text-white"><i class="bi bi-instagram"></i> Instagram</a><br>
+                <a href="#" class="text-white"><i class="bi bi-youtube"></i> YouTube</a>
+            </div>
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="abonnement.html" class="text-white">Abonnement</a></li>
+                    <li><a href="les_boites.html" class="text-white">Les boîtes</a></li>
+                    <li><a href="a_propos.html" class="text-white">À propos</a></li>
+                    <li><a href="contact.html" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center py-3">
+            &copy; 2024 Snack du Monde. All rights reserved.
+        </div>
+    </div>
+</footer>
     <!-- Overlay Menu -->
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
