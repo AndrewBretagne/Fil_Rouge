@@ -114,6 +114,67 @@
     width: 80%;
     max-width: 300px;
 }
+.card{
+    height:95%;
+    font-size: 1.2em;
+    font-weight:500;
+    border:#45b046 solid 2px;
+    border-radius: 15px;
+}
+.card-title{
+    color: #45b046;
+    font-weight: bold;
+}
+table td{
+    vertical-align: middle;
+    height:80px;
+
+}
+table th img{
+    width:100%;
+    height:auto;
+    background-color: #e5dd90;
+    border:#45b046 solid 3px;
+    border-radius: 10px;
+    padding:1em;
+}
+.carousel-item {
+    padding: 20px;
+}
+.carousel-item .review {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+}
+.carousel-item .customer {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+.g-signin2 {
+    width: 100% !important; 
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.g-signin2 div {
+    width: auto !important; 
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 50px !important; 
+    font-size: 18px !important; 
+}
+
+.g-signin2 .abcRioButtonContentWrapper {
+    padding: 0 !important; 
+}
+#promoBanner{
+    background-color: #45b046;
+    color: #e5dd90;
+    font-weight: bold;
+    font-size: 1.1em;
+}
 
 /* Larger size for desktop */
 @media (min-width: 768px) {
